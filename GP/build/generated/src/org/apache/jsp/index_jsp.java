@@ -1,0 +1,275 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html lang=\"en\">\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta charset=\"utf-8\">\r\n");
+      out.write("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n");
+      out.write("        <title>Book My Trip</title>\r\n");
+      out.write("        <link href=\"https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap\" rel=\"stylesheet\">\r\n");
+      out.write("        <link href=\"https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap\" rel=\"stylesheet\">\r\n");
+      out.write("        <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\r\n");
+      out.write("        <link href=\"css/style.css\" rel=\"stylesheet\">\r\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/font-awesome.min.css\" />\r\n");
+      out.write("        <script src=\"js/jquery-2.1.1.min.js\"></script>\r\n");
+      out.write("        <script src=\"js/bootstrap.min.js\"></script>\r\n");
+      out.write("\r\n");
+      out.write("        <style>\r\n");
+      out.write("            .div{\r\n");
+      out.write("                background-image: url(\"img/1.jpg\");\r\n");
+      out.write("            }\r\n");
+      out.write("            .button {\r\n");
+      out.write("                background-color: red;\r\n");
+      out.write("                border: none;\r\n");
+      out.write("                color: white;\r\n");
+      out.write("                padding: 10px;\r\n");
+      out.write("                text-align: center;\r\n");
+      out.write("                display: inline-block;\r\n");
+      out.write("                font-size: 16px;\r\n");
+      out.write("                cursor: pointer;\r\n");
+      out.write("            }\r\n");
+      out.write("        </style>\r\n");
+      out.write("\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("\r\n");
+      out.write("        <section id=\"top\">\r\n");
+      out.write("            <div class=\"container\">\r\n");
+      out.write("                <div class=\"row\">\r\n");
+      out.write("                    <div class=\"col-sm-12\">\r\n");
+      out.write("                        <div class=\"top\">\r\n");
+      out.write("                            <ul class=\"nav navbar-nav navbar-right\">\r\n");
+      out.write("                                <li class=\"dropdown\">\r\n");
+      out.write("                                    <a href=\"login.jsp\" style=\"background-color: blue; color: white\">Sign Out</a>                                    \r\n");
+      out.write("                                </li>\r\n");
+      out.write("                            </ul>\r\n");
+      out.write("\r\n");
+      out.write("                        </div>\r\n");
+      out.write("\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\t\r\n");
+      out.write("\r\n");
+      out.write("        <section id=\"header\">\r\n");
+      out.write("            <div class=\"container\">\r\n");
+      out.write("                <div class=\"row\">\r\n");
+      out.write("                    <div class=\"col-sm-12\">\r\n");
+      out.write("                        <nav class=\"navbar navbar-default\" role=\"navigation\">\r\n");
+      out.write("\r\n");
+      out.write("                            <!-- Brand and toggle get grouped for better mobile display -->\r\n");
+      out.write("                            <div class=\"navbar-header\">\r\n");
+      out.write("                                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#navbar-brand-centered\">\r\n");
+      out.write("                                    <span class=\"sr-only\">Toggle navigation</span>\r\n");
+      out.write("                                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                                </button>\r\n");
+      out.write("                                <a class=\"navbar-brand\" href=\"index.jsp\">Travel<span>with me in Egypt</span></a>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("\r\n");
+      out.write("                            <!-- Collect the nav links, forms, and other content for toggling -->\r\n");
+      out.write("                            <div class=\"collapse navbar-collapse\" id=\"navbar-brand-centered\">\r\n");
+      out.write("                                <ul class=\"nav navbar-nav\">\r\n");
+      out.write("                                    <li><a class=\"text_2 active_1\" href=\"index.jsp\">Home</a></li>\r\n");
+      out.write("                                    <li><a class=\"text_2\" href=\"user_reservations.jsp\">User Reservations</a></li>\r\n");
+      out.write("                                    <li><a class=\"text_2\" href=\"contact.jsp\">Contact</a></li>\r\n");
+      out.write("                                </ul>\r\n");
+      out.write("                            </div><!-- /.navbar-collapse -->\r\n");
+      out.write("\r\n");
+      out.write("                        </nav>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\t\r\n");
+      out.write("\r\n");
+      out.write("        <div style=\"margin-top:10px; margin-bottom:0px ; height: 15px; background-color: red\"></div>\r\n");
+      out.write("\r\n");
+      out.write("        <div class=\"div\" style=\"padding-bottom: 200px;\">\r\n");
+      out.write("            <section id=\"trip_main\" style=\"margin-top: 0px; padding-top: 20px; margin-left: 10%;\">\r\n");
+      out.write("                <div class=\"container\">\r\n");
+      out.write("                    <div class=\"row\">\r\n");
+      out.write("                        <div class=\"col-sm-6 trip_main_1\">\r\n");
+      out.write("                            <div class=\"tab-content clearfix\" style=\"background-color: seagreen;color: white;\">\r\n");
+      out.write("                                <form action=\"trips.jsp\">\r\n");
+      out.write("                                    <div class=\"col-sm-12 more_2\">  \r\n");
+      out.write("                                        <div class=\"col-sm-4  more_2_inner_1\">\r\n");
+      out.write("                                            <h3>Governorate</h3>\r\n");
+      out.write("                                            <select name=\"city\" class=\"form-control input-lg\">\r\n");
+      out.write("                                                <option value=\"All\">All</option>\r\n");
+      out.write("                                                <option value=\"cairo\">Cairo</option>\r\n");
+      out.write("                                                <option value=\"giza\">Giza</option>\r\n");
+      out.write("                                                <option value=\"alexandria\">Alexandria</option>\r\n");
+      out.write("                                                <option value=\"matroh\">Matroh</option>\r\n");
+      out.write("                                                <option value=\"luxor\">Luxor</option>\r\n");
+      out.write("                                                <option value=\"aswan\">Aswan</option>\r\n");
+      out.write("                                                <option value=\"sinai\">Sinai</option>\r\n");
+      out.write("                                            </select>\r\n");
+      out.write("                                        </div>\r\n");
+      out.write("                                    </div>\r\n");
+      out.write("                                    <div class=\"col-sm-12 search_1\">\r\n");
+      out.write("                                        <div class=\"col-sm-12 search_inner\"><button class=\"button\">Search Trips</button></div>\r\n");
+      out.write("                                    </div>\r\n");
+      out.write("                                </form>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                <div class=\"col-sm-6\"></div>\r\n");
+      out.write("            </section>            \r\n");
+      out.write("        </div>\r\n");
+      out.write("\r\n");
+      out.write("        <section id=\"routes\">\r\n");
+      out.write("            <div class=\"container\">\r\n");
+      out.write("                <div class=\"row\">\r\n");
+      out.write("                    <div class=\"col-sm-12 routes_main\">\r\n");
+      out.write("                        <h2> <i class=\"fa fa-plane\"></i>Our popular trips</h2>\r\n");
+      out.write("                        <div class=\"col-sm-3\">\r\n");
+      out.write("                            <div class=\"routes_inner\">\r\n");
+      out.write("                                <a href=\"#\"><img src=\"img/trip1.jpg\" width=\"100%\"></a>\r\n");
+      out.write("                                <div class=\"routes_inner_1 clearfix\">\r\n");
+      out.write("                                    <h4>Pyramids</h4>\r\n");
+      out.write("                                    <p><i class=\"fa\"></i> <span style=\"color: black\">$</span> 200 </p>\r\n");
+      out.write("                                    <span class=\"booking_1\"> <a href=\"#\">Book Now</a></span>\r\n");
+      out.write("                                </div>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"col-sm-3\">\r\n");
+      out.write("                            <div class=\"routes_inner\">\r\n");
+      out.write("                                <a href=\"#\"><img src=\"img/trip2.jpg\" width=\"100%\"></a>\r\n");
+      out.write("                                <div class=\"routes_inner_1 clearfix\">\r\n");
+      out.write("                                    <h4>Bey Citadel</h4>\r\n");
+      out.write("                                    <p><i class=\"fa\"></i> <span style=\"color: black\">$</span> 250 </p>\r\n");
+      out.write("                                    <span class=\"booking_1\"> <a href=\"#\">Book Now</a></span>\r\n");
+      out.write("                                </div>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"col-sm-3\">\r\n");
+      out.write("                            <div class=\"routes_inner\">\r\n");
+      out.write("                                <a href=\"#\"><img src=\"img/trip3.jpg\" height=\"155\" width=\"100%\"></a>\r\n");
+      out.write("                                <div class=\"routes_inner_1 clearfix\">\r\n");
+      out.write("                                    <h4>siwa</h4>\r\n");
+      out.write("                                    <p><i class=\"fa\"></i> <span style=\"color: black\">$ </span>350 </p>\r\n");
+      out.write("                                    <span class=\"booking_1\"> <a href=\"#\">Book Now</a></span>\r\n");
+      out.write("                                </div>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"col-sm-3\">\r\n");
+      out.write("                            <div class=\"routes_inner\">\r\n");
+      out.write("                                <a href=\"#\"><img src=\"img/trip4.jpg\" width=\"100%\"></a>\r\n");
+      out.write("                                <div class=\"routes_inner_1 clearfix\">\r\n");
+      out.write("                                    <h4>Karnak Temple</h4>\r\n");
+      out.write("                                    <p><i class=\"fa\"></i> <span style=\"color: black\">$ </span>450 </p>\r\n");
+      out.write("                                    <span class=\"booking_1\"> <a href=\"#\">Book Now</a></span>\r\n");
+      out.write("                                </div>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                    <div class=\"col-sm-12\">\r\n");
+      out.write("\r\n");
+      out.write("                        <div class=\"col-sm-3\">\r\n");
+      out.write("                            <div class=\"routes_inner\">\r\n");
+      out.write("                                <a href=\"#\"><img src=\"img/trip5.jpg\" width=\"100%\"></a>\r\n");
+      out.write("                                <div class=\"routes_inner_1 clearfix\">\r\n");
+      out.write("                                    <h4>Aswan</h4>\r\n");
+      out.write("                                    <p><i class=\"fa\"></i> <span style=\"color: black\">$</span> 750 </p>\r\n");
+      out.write("                                    <span class=\"booking_1\"> <a href=\"#\">Book Now</a></span>\r\n");
+      out.write("                                </div>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("\r\n");
+      out.write("                    </div>\r\n");
+      out.write("\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\r\n");
+      out.write("\r\n");
+      out.write("        <section id=\"footer_text\"  class=\"border_bottom_3 border_top_3\">\r\n");
+      out.write("            <div class=\"container\">\r\n");
+      out.write("                <div class=\"row\">\r\n");
+      out.write("                    <div class=\"col-sm-12\">\r\n");
+      out.write("                        <div class=\"footer_3 clearfix\">\r\n");
+      out.write("                            <div class=\"col-sm-3\">\r\n");
+      out.write("                                <div class=\"footer_3_inner_2\">\r\n");
+      out.write("                                    <p>Follow Us :</p>\r\n");
+      out.write("                                    <p><a href=\"#\"><i class=\"fa fa-facebook\"></i></a>\r\n");
+      out.write("                                        <a href=\"#\"><i class=\"fa fa-twitter\"></i></a>\r\n");
+      out.write("                                        <a href=\"#\"> <i class=\"fa fa-youtube\"></i></a>\r\n");
+      out.write("                                    </p>\r\n");
+      out.write("                                </div>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\r\n");
+      out.write("\r\n");
+      out.write("        <section id=\"footer_bottom\" style=\"background-color: red; color: white;\">\r\n");
+      out.write("            <div class=\"container\">\r\n");
+      out.write("                <div class=\"row\">\r\n");
+      out.write("                    <div class=\"col-sm-12\">\r\n");
+      out.write("                        <div class=\"footer_4\">\r\n");
+      out.write("                            <p  class=\"text-center p2\">© 2021 Travel with me in Egypt. All Rights Reserved </p>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\r\n");
+      out.write("    </body>\r\n");
+      out.write("\r\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
